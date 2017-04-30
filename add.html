@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+
+		<!-- CSS -->
+		<link href="main.css" rel="stylesheet">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	</head>
+	<body id="main">
+		<nav class="navbar navbar-toggleable-md navbar-default bg-faded">
+			<input type="checkbox" id="navbar-toggle-cbox">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">myList</a>
+				<label for="navbar-toggle-cbox" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#newnav">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</label>
+			</div>
+		  	<div class="collapse navbar-collapse" id="newnav">
+				<ul class="nav navbar-nav mr-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link">List</a></li>
+					<li class="nav-item active"><a href="#" class="nav-link">Add</a></li>
+					<li class="nav-item"><a href="edit.html" class="nav-link">Edit</a></li>
+					<li class="nav-item"><a href="imp.html" class="nav-link">Imprint</a></li>
+				</ul>
+			</div>
+		</nav>
+		<h1>Add new Item</h1>
+		<form action="">
+			<div class="form-group">
+				<label for="todo-text">Item</label>
+				<input type="text" class="form-control" id="todo-text" maxlength="160" placeholder="Name">
+			</div>
+			<div class="form-group">
+				<label for="todo-text">Description</label>
+				<input type="text" class="form-control" id="todo-text" maxlength="160" placeholder="max. 160 characters">
+			</div>
+			<div>
+				<label for="todo-deadline">Deadline</label>
+				<input type="date" class="form-control" id="todo-deadline">
+			</div>
+			<div>
+				<label for="todo-finished">Progress</label>
+				<input type="text" class="form-control" id="todo-fin" min="0" max="100" placeholder="%">
+			</div>
+			<div id="lower-btn">
+				<button type="submit" class="btn btn-success">Add</button>
+				<button type="submit" class="btn btn-danger">Cancel</button>
+			</div>
+		</form>
+	</body>
+</html>
